@@ -11,8 +11,13 @@ body {
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0; /* Ensures no margin or padding from body */
     background-color: var(--forest-light-green);
     color: var(--bark-brown);
+    min-height: 100vh;
+    text-rendering: optimizeSpeed; /* Improve text rendering */
+    line-height: 1.5; /* Line height for readability */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Header Section */
@@ -20,7 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 1rem; /* Adds padding inside the header */
     background-color: var(--forest-dark-green);
     color: white;
     min-height: 5dvh;
@@ -59,7 +64,7 @@ nav a:hover {
 main {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem; /* Adds internal padding for the main content */
     background-color: var(--bark-brown);
     color: white;
     border-radius: 8px;
@@ -97,6 +102,7 @@ footer {
     min-height: 5dvh;
     background-color: var(--forest-dark-green);
     color: white;
-    margin-top: 1rem;
+    margin-top: 1rem; /* Adds space between the content and footer */
+    padding: 10px 0; /* Ensures padding inside the footer */
     border-radius: 8px;
 }
